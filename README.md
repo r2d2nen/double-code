@@ -32,10 +32,12 @@ This is for testing
 
 ### Set up second repo
 
-1. Check where we are pushing: git remote -v
+1. Check where we are pushing currently: git remote -v
 2. Add where next to push:
-	git remote set-url --add --push origin <SSH-link>
+	1. git remote set-url --add --push origin <SSH-link>
+	2. Make sure SSH-key is added
 3. Check new destination is added pushing: git remote -v
+	There should now be both push destinations.
 
 
 ## Extras
@@ -45,12 +47,12 @@ vim  ~/.ssh/config
 
 	Host git.aza.nu
 	        HostName git.aza.nu
-	        User rikard.helgegren
+	        User User1
 	        IdentityFile ~/.ssh/id_rsa
 
 
 	Host github.com/rikard-helgegren
 	        HostName github.com
-	        User rikard-helgegren
+	        User user2
 	        IdentityFile ~/.ssh/id_rsa_personal_use
 
