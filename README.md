@@ -6,6 +6,8 @@ This is for testing
 
 ## Steps taken for double repo storage
 
+### Set up first repo
+
 1. Set up a repo
 	1. git init
 	2. git add .
@@ -26,7 +28,14 @@ This is for testing
 		1. ssh-add -l
 		2. If not set, set it by: ssh-add ~/.ssh/id_rsa
 
-4. 
+4. Push code with: git push -u origin main
+
+### Set up second repo
+
+1. Check where we are pushing: git remote -v
+2. Add where next to push:
+	git remote set-url --add --push origin <SSH-link>
+3. Check new destination is added pushing: git remote -v
 
 
 ## Extras
@@ -45,5 +54,3 @@ vim  ~/.ssh/config
 	        User rikard-helgegren
 	        IdentityFile ~/.ssh/id_rsa_personal_use
 
-ssh-add -l
-ssh-add ~/.ssh/id_rsa
