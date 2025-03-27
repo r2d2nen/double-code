@@ -23,7 +23,7 @@ This is for testing
 			- Coppy public key and add to GitLab
 		2. Don't have SSH key:
 			- In terminal type: ssh-keygen -t rsa -b 4096 -C "your-email@example.com"
-			- Coppy public key and add to GitLab
+			- Coppy public key and add to GitLab. Can be found at: ~/.ssh/id_rsa.pub
 	2. make sure you use the SSH-key in your repo
 		1. ssh-add -l
 		2. If not set, set it by: ssh-add ~/.ssh/id_rsa
