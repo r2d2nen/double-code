@@ -14,7 +14,7 @@ This is for testing
 	3. git commit -m "first commit"
 
 2. Push the code to first storage
-	1. git remote set-url origin <SSH-link>
+	1. git remote set-url origin "SSH-link"
 		git branch -M main
 
 3. Set up SSH Authentication (if not there)
@@ -34,7 +34,7 @@ This is for testing
 
 1. Check where we are pushing currently: git remote -v
 2. Add where next to push:
-	1. git remote set-url --add --push origin <SSH-link>
+	1. git remote set-url --add --push origin "SSH-link"
 	2. Make sure SSH-key is added
 3. Check new destination is added pushing: git remote -v
 	There should now be both push destinations.
