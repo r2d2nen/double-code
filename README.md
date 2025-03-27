@@ -56,3 +56,27 @@ vim  ~/.ssh/config
 	        User user2
 	        IdentityFile ~/.ssh/id_rsa_personal_use
 
+
+vim .git/config
+
+	[core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+        ignorecase = true
+        precomposeunicode = true
+	[remote "origin"]
+	        url = git@gitlab.com:double-code/double-code.git
+	        fetch = +refs/heads/*:refs/remotes/origin/*
+	        pushurl = git@github.com:r2d2nen/double-code.git
+	        pushurl = git@gitlab.com:double-code/double-code.git
+	[user]
+	        name = rikard-helgegren
+	        email = qsx574@AB-G4VYFL91Q1
+	[branch "main"]
+	        remote = origin
+	        merge = refs/heads/main
+
+
+
